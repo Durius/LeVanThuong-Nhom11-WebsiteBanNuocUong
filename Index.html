@@ -1,0 +1,975 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stype.css">
+    <title>Dev Coffee</title>
+</head>
+<body>
+    
+    <!-- Asm2 ở các phẩn : User signin, icon cart và sildeshow ở index.html -->
+
+
+
+    <div class="Website">
+        <!-- Thanh menu -->
+        <div class="Menu">
+            <div class="logo-website">
+             <a href="Index.html"><img title="Home" src="/Img/500K.png" alt="Logo Website"></a>   
+            </div>
+            <div class="task_menu">
+                <ul class="Main_menu">
+                    <li><a href="Index.html">Home</a></li>
+                    <li><a href="">Product</a>
+                        <ul class="Sub_menu">
+                                <li><a href="">Milk Tea</a></li>
+                                <li><a href="">Smoothies</a></li>
+                                <li><a href="">Tea</a></li>
+                                <li><a href="">Soda</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="About.html">About</a></li>
+                    <li><a href="Enluate.html">Evaluate</a></li>
+                </ul>
+            </div>
+            <div class="buttoms">
+                <div class="search">
+                    <ion-icon name="search-outline"></ion-icon>
+                    <input type="text" placeholder="Sreach">
+                </div>
+                <div class="cart">
+                  <a href="cart.html" style="color: white;"> <ion-icon title="My Cart" name="cart-outline"></ion-icon></a> 
+                </div>
+                <ul class="account">
+                    <li><ion-icon title="My Account" name="person-outline"></ion-icon>
+                    <ul class="login">
+                        <li><a href="Login.html">Login</a></li>
+                        <li><a href="Signin.html">Sign in</a></li>
+                    </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="Saler">
+            <div class="Slogan">
+                <p>"<b>Thỏa mãn</b> vị giác, <b>khám phá</b> những hương vi mới mẻ"</p>
+            </div>
+            <!-- SlideShow -->
+        <div class="container">
+        <h2>Best Saler</h2>
+        <img id="anh" src="/ImgSlideShow/0.jpg" alt="Natural picture">
+        <div class="btn">
+        <button onclick="prev()"><ion-icon name="chevron-back"></ion-icon></button>
+        <button onclick="next()"><ion-icon name="chevron-forward"></ion-icon></button>
+        </div>
+        <p id="stt_anh">0/20</p>
+</div>
+    </div>
+</div>
+    </div>
+
+    <!-- Sản phẩm -->
+    <div class="Produce">
+        <!-- Trà sữa -->
+        <div class="MilkTea">
+            <h3>Milk Tea</h3>
+            <div class="cards_milktea">
+                <div class="card">
+                    <div class="card-top">
+                    <img src="/Img/trasuacheesemilkfoam.jpg" alt="" class="card_img">
+                    <span class="sale">-20%</span>
+                </div>
+                <div class="card_body">
+                    <div class="card_content">
+                        <h3 class="name">Trà sữa kem cheese milk foam</h3>
+                        <div class="price_size">
+                        <span class="price_old">75.000VND</span>
+                        <span class="price">50.00VND</span>
+                        <div class="size">
+                            <input type="radio" name="gender" value="M"> M
+                            <input type="radio" name="gender" value="L"> L
+                        </div>
+                    </div>
+                    </div>
+                    <div class="card_bottom">
+                        <button class="buy">Buy now</button>
+                        <button class="add_to_cart" >Add to card</button>
+                    </div>
+                </div>
+                </div>
+                <div class="card">
+                    <div class="card-top">
+                    <img src="/Img/trasuahoadaubiet.jpg" alt="" class="card_img">
+                    <span class="sale">-25%</span>
+                </div>
+                <div class="card_body">
+                    <div class="card_content">
+                        <h3 class="name">Trà sữa hoa đậu biết</h3>
+                        <div class="price_size">
+                        <span class="price_old">50.000VND</span>
+                        <span class="price">37.500VND</span>
+                        <div class="size">
+                            <input type="radio" name="gender" value="M"> M
+                            <input type="radio" name="gender" value="M"> L
+                        </div>
+                    </div>
+                    </div>
+                    <div class="card_bottom">
+                        <button class="buy">Buy now</button>
+                        <button class="add_to_cart" >Add to card</button>
+                    </div>
+                </div>
+                </div>
+                <div class="card">
+                    <div class="card-top">
+                    <img src="/Img/trasuakemman.jpg" alt="" class="card_img">
+                    <span class="sale">-20%</span>
+                </div>
+                <div class="card_body">
+                    <div class="card_content">
+                        <h3 class="name">Trà sữa kem mặn</h3>
+                        <div class="price_size">
+                        <span class="price_old">60.000VND</span>
+                        <span class="price">48.000VND</span>
+                        <div class="size">
+                            <input type="radio" name="gender" value="M"> M
+                            <input type="radio" name="gender" value="M"> L
+                        </div>
+                    </div>
+                    </div>
+                    <div class="card_bottom">
+                        <button class="buy">Buy now</button>
+                        <button class="add_to_cart" >Add to card</button>
+                    </div>
+                </div>
+                </div>
+                <div class="card">
+                    <div class="card-top">
+                    <img src="/Img/trasuamachat.jpg" alt="" class="card_img">
+                    <span class="sale">-25%</span>
+                </div>
+                <div class="card_body">
+                    <div class="card_content">
+                        <h3 class="name">Trà sữa matcha</h3>
+                        <div class="price_size">
+                        <span class="price_old">50.000VND</span>
+                        <span class="price">37.500VND</span>
+                        <div class="size">
+                            <input type="radio" name="gender" value="M"> M
+                            <input type="radio" name="gender" value="M"> L
+                        </div>
+                    </div>
+                    </div>
+                    <div class="card_bottom">
+                        <button class="buy">Buy now</button>
+                        <button class="add_to_cart" >Add to card</button>
+                    </div>
+                </div>
+                </div>
+                <div class="card">
+                    <div class="card-top">
+                    <img src="/Img/trasuatruyenthong.jpg" alt="" class="card_img">
+                    <span class="sale">-25%</span>
+                </div>
+                <div class="card_body">
+                    <div class="card_content">
+                        <h3 class="name">Trà sữa truyền thống</h3>
+                        <div class="price_size">
+                        <span class="price_old">50.000VND</span>
+                        <span class="price">37.500VND</span>
+                        <div class="size">
+                            <input type="radio" name="gender" value="M"> M
+                            <input type="radio" name="gender" value="M"> L
+                        </div>
+                    </div>
+                    </div>
+                    <div class="card_bottom">
+                        <button class="buy">Buy now</button>
+                        <button class="add_to_cart" >Add to card</button>
+                    </div>
+                </div>
+                </div>
+                <div class="card">
+                    <div class="card-top">
+                    <img src="/Img/trasuaxoai.jpg" alt="" class="card_img">
+                    <span class="sale">-15%</span>
+                </div>
+                <div class="card_body">
+                    <div class="card_content">
+                        <h3 class="name">Trà sữa xoài</h3>
+                        <div class="price_size">
+                        <span class="price_old">65.000VND</span>
+                        <span class="price">55.000VND</span>
+                        <div class="size">
+                            <input type="radio" name="gender" value="M"> M
+                            <input type="radio" name="gender" value="M"> L
+                        </div>
+                    </div>
+                    </div>
+                    <div class="card_bottom">
+                        <button class="buy">Buy now</button>
+                        <button class="add_to_cart" >Add to card</button>
+                    </div>
+                </div>
+                </div>
+                <div class="card">
+                    <div class="card-top">
+                    <img src="/Img/trasukhoaimon.jpg" alt="" class="card_img">
+                    <span class="sale">-20%</span>
+                </div>
+                <div class="card_body">
+                    <div class="card_content">
+                        <h3 class="name">Trà sữa khoai môn</h3>
+                        <div class="price_size">
+                        <span class="price_old">60.000VND</span>
+                        <span class="price">48.000VND</span>
+                        <div class="size">
+                            <input type="radio" name="gender" value="M"> M
+                            <input type="radio" name="gender" value="M"> L
+                        </div>
+                    </div>
+                    </div>
+                    <div class="card_bottom">
+                        <button class="buy">Buy now</button>
+                        <button class="add_to_cart" >Add to card</button>
+                    </div>
+                </div>
+                </div>
+                <div class="card">
+                    <div class="card-top">
+                    <img src="/Img/trausuakemchungnuong.jpg" alt="" class="card_img">
+                    <span class="sale">-15%</span>
+                </div>
+                <div class="card_body">
+                    <div class="card_content">
+                        <h3 class="name">Trà sữa kem trứng nướng</h3>
+                        <div class="price_size">
+                        <span class="price_old">65.000VND</span>
+                        <span class="price">55.000VND</span>
+                        <div class="size">
+                            <input type="radio" name="gender" value="M"> M
+                            <input type="radio" name="gender" value="M"> L
+                        </div>
+                    </div>
+                    </div>
+                    <div class="card_bottom">
+                        <button class="buy">Buy now</button>
+                        <button class="add_to_cart" >Add to card</button>
+                    </div>
+                </div>
+                </div>  
+            </div>
+        </div>
+        <!-- Sinh tố -->
+        <div class="Smoothie">
+            <h3>Smoothies</h3>
+            <div class="cards_Smoothie">
+                <div class="card">
+                    <div class="card-top">
+                    <img src="/Img/sinhtobo.jpg" alt="" class="card_img">
+                    <span class="sale">-20%</span>
+                </div>
+                <div class="card_body">
+                    <div class="card_content">
+                        <h3 class="name">Sinh tố bơ</h3>
+                        <div class="price_size">
+                        <span class="price_old">40.000VND</span>
+                        <span class="price">32.000VND</span>
+                        <div class="size">
+                            <input type="radio" name="gender" value="M"> M
+                            <input type="radio" name="gender" value="M"> L
+                        </div>
+                    </div>
+                    </div>
+                    <div class="card_bottom">
+                        <button class="buy">Buy now</button>
+                        <button class="add_to_cart" >Add to card</button>
+                    </div>
+                </div>
+                </div>
+                <div class="card">
+                    <div class="card-top">
+                    <img src="/Img/sinhtocam.jpg" alt="" class="card_img">
+                    <span class="sale">-20%</span>
+                </div>
+                <div class="card_body">
+                    <div class="card_content">
+                        <h3 class="name">Sinh tố cam</h3>
+                        <div class="price_size">
+                        <span class="price_old">40.000VND</span>
+                        <span class="price">32.000VND</span>
+                        <div class="size">
+                            <input type="radio" name="gender" value="M"> M
+                            <input type="radio" name="gender" value="M"> L
+                        </div>
+                    </div>
+                    </div>
+                    <div class="card_bottom">
+                        <button class="buy">Buy now</button>
+                        <button class="add_to_cart" >Add to card</button>
+                    </div>
+                </div>
+                </div>
+                <div class="card">
+                    <div class="card-top">
+                    <img src="/Img/sinhtodau.jpg" alt="" class="card_img">
+                    <span class="sale">-20%</span>
+                </div>
+                <div class="card_body">
+                    <div class="card_content">
+                        <h3 class="name">Sinh tố dâu</h3>
+                        <div class="price_size">
+                        <span class="price_old">40.000VND</span>
+                        <span class="price">32.000VND</span>
+                        <div class="size">
+                            <input type="radio" name="gender" value="M"> M
+                            <input type="radio" name="gender" value="M"> L
+                        </div>
+                    </div>
+                    </div>
+                    <div class="card_bottom">
+                        <button class="buy">Buy now</button>
+                        <button class="add_to_cart" >Add to card</button>
+                    </div>
+                </div>
+                </div>
+                <div class="card">
+                    <div class="card-top">
+                    <img src="/Img/sinhtokiwi.jpg" alt="" class="card_img">
+                    <span class="sale">-15%</span>
+                </div>
+                <div class="card_body">
+                    <div class="card_content">
+                        <h3 class="name">Sinh tố kiwi</h3>
+                        <div class="price_size">
+                        <span class="price_old">50.000VND</span>
+                        <span class="price">42.500VND</span>
+                        <div class="size">
+                            <input type="radio" name="gender" value="M"> M
+                            <input type="radio" name="gender" value="M"> L
+                        </div>
+                    </div>
+                    </div>
+                    <div class="card_bottom">
+                        <button class="buy">Buy now</button>
+                        <button class="add_to_cart" >Add to card</button>
+                    </div>
+                </div>
+                </div>
+                <div class="card">
+                    <div class="card-top">
+                    <img src="/Img/sinhtovietquoc.jpg" alt="" class="card_img">
+                    <span class="sale">-20%</span>
+                </div>
+                <div class="card_body">
+                    <div class="card_content">
+                        <h3 class="name">Sinh tố việt quốc</h3>
+                        <div class="price_size">
+                        <span class="price_old">50.000VND</span>
+                        <span class="price">40.000VND</span>
+                        <div class="size">
+                            <input type="radio" name="gender" value="M"> M
+                            <input type="radio" name="gender" value="M"> L
+                        </div>
+                    </div>
+                    </div>
+                    <div class="card_bottom">
+                        <button class="buy">Buy now</button>
+                        <button class="add_to_cart" >Add to card</button>
+                    </div>
+                </div>
+                </div>
+                <div class="card">
+                    <div class="card-top">
+                    <img src="/Img/sinhtosocolabanana.jpg" alt="" class="card_img">
+                    <span class="sale">-20%</span>
+                </div>
+                <div class="card_body">
+                    <div class="card_content">
+                        <h3 class="name">Sinh tố chuối socola</h3>
+                        <div class="price_size">
+                         <span class="price_old">50.000VND</span>
+                        <span class="price">40.000VND</span>
+                        <div class="size">
+                            <input type="radio" name="gender" value="M"> M
+                            <input type="radio" name="gender" value="M"> L
+                        </div>
+                    </div>
+                    </div>
+                    <div class="card_bottom">
+                        <button class="buy">Buy now</button>
+                        <button class="add_to_cart" >Add to card</button>
+                    </div>
+                </div>
+                </div>
+                <div class="card">
+                    <div class="card-top">
+                    <img src="/Img/sinhtoduahau.jpg" alt="" class="card_img">
+                    <span class="sale">-20%</span>
+                </div>
+                <div class="card_body">
+                    <div class="card_content">
+                        <h3 class="name">Sinh tố dưa hấu</h3>
+                        <div class="price_size">
+                        <span class="price_old">40.000VND</span>
+                        <span class="price">32.000VND</span>
+                        <div class="size">
+                            <input type="radio" name="gender" value="M"> M
+                            <input type="radio" name="gender" value="M"> L
+                        </div>
+                    </div>
+                    </div>
+                    <div class="card_bottom">
+                        <button class="buy">Buy now</button>
+                        <button class="add_to_cart" >Add to card</button>
+                    </div>
+                </div>
+                </div>
+                <div class="card">
+                    <div class="card-top">
+                    <img src="/Img/sinhtoxoay.jpg" alt="" class="card_img">
+                    <span class="sale">-20%</span>
+                </div>
+                <div class="card_body">
+                    <div class="card_content">
+                        <h3 class="name">Sinh tố xoài</h3>
+                        <div class="price_size">
+                        <span class="price_old">40.000VND</span>
+                        <span class="price">32.000VND</span>
+                        <div class="size">
+                            <input type="radio" name="gender" value="M"> M
+                            <input type="radio" name="gender" value="M"> L
+                        </div>
+                    </div>
+                    </div>
+                    <div class="card_bottom">
+                        <button class="buy">Buy now</button>
+                        <button class="add_to_cart" >Add to card</button>
+                    </div>
+                </div>
+                </div>  
+                <div class="card">
+                    <div class="card-top">
+                    <img src="/Img/sinhtodua.jpg" alt="" class="card_img">
+                    <span class="sale">-20%</span>
+                </div>
+                <div class="card_body">
+                    <div class="card_content">
+                        <h3 class="name">Sinh tố dừa</h3>
+                        <div class="price_size">
+                        <span class="price_old">40.000VND</span>
+                        <span class="price">32.000VND</span>
+                        <div class="size">
+                            <input type="radio" name="gender" value="M"> M
+                            <input type="radio" name="gender" value="M"> L
+                        </div>
+                    </div>
+                    </div>
+                    <div class="card_bottom">
+                        <button class="buy">Buy now</button>
+                        <button class="add_to_cart" >Add to card</button>
+                    </div>
+                </div>
+                </div>  
+                <div class="card">
+                    <div class="card-top">
+                    <img src="/Img/sinhtothanhlong.jpg" alt="" class="card_img">
+                    <span class="sale">-20%</span>
+                </div>
+                <div class="card_body">
+                    <div class="card_content">
+                        <h3 class="name">Sinh tố thanh long</h3>
+                        <div class="price_size">
+                        <span class="price_old">40.000VND</span>
+                        <span class="price">32.000VND</span>
+                        <div class="size">
+                            <input type="radio" name="gender" value="M"> M
+                            <input type="radio" name="gender" value="M"> L
+                        </div>
+                    </div>
+                    </div>
+                    <div class="card_bottom">
+                        <button class="buy">Buy now</button>
+                        <button class="add_to_cart" >Add to card</button>
+                    </div>
+                </div>
+                </div>  
+                <div class="card">
+                    <div class="card-top">
+                    <img src="/Img/sinhtothom.jpg" alt="" class="card_img">
+                    <span class="sale">-25%</span>
+                </div>
+                <div class="card_body">
+                    <div class="card_content">
+                        <h3 class="name">Sinh tố thơm</h3>
+                        <div class="price_size">
+                        <span class="price_old">75000VND</span>
+                        <span class="price">50.000VND</span>
+                        <div class="size">
+                            <input type="radio" name="gender" value="M"> M
+                            <input type="radio" name="gender" value="M"> L
+                        </div>
+                    </div>
+                    </div>
+                    <div class="card_bottom">
+                        <button class="buy">Buy now</button>
+                        <button class="add_to_cart" >Add to card</button>
+                    </div>
+                </div>
+                </div>  
+                <div class="card">
+                    <div class="card-top">
+                    <img src="/Img/sinhtochuoi.jpg" alt="" class="card_img">
+                    <span class="sale">-20%</span>
+                </div>
+                <div class="card_body">
+                    <div class="card_content">
+                        <h3 class="name">Sinh tố chuối</h3>
+                        <div class="price_size">
+                        <span class="price_old">40000VND</span>
+                        <span class="price">32.000VND</span>
+                        <div class="size">
+                            <input type="radio" name="gender" value="M"> M
+                            <input type="radio" name="gender" value="M"> L
+                        </div>
+                    </div>
+                    </div>
+                    <div class="card_bottom">
+                        <button class="buy">Buy now</button>
+                        <button class="add_to_cart" >Add to card</button>
+                    </div>
+                </div>
+                </div>  
+            </div>
+        </div>
+        <!-- Trà trái cây -->
+        <div class="Tea">
+            <h3>Tea</h3>
+            <div class="cards_tea">
+                <div class="card">
+                    <div class="card-top">
+                    <img src="/Img/trachanhmatong.jpg" alt="" class="card_img">
+                    <span class="sale">-20%</span>
+                </div>
+                    <div class="card_body">
+                        <div class="card_content">
+                            <h3 class="name">Trà chanh mật ong</h3>
+                            <div class="price_size">
+                            <span class="price_old">40.000VND</span>
+                            <span class="price">32.000VND</span>
+                            <div class="size">
+                                <input type="radio" name="gender" value="M"> M
+                                <input type="radio" name="gender" value="M"> L
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card_bottom">
+                           <button class="buy">Buy now</button>
+                            <button class="add_to_cart" >Add to card</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-top">
+                    <img src="/Img/tradao.jpg" alt="" class="card_img">
+                    <span class="sale">-20%</span>
+                </div>
+                <div class="card_body">
+                    <div class="card_content">
+                        <h3 class="name">Trà đào cam sả</h3>
+                        <div class="price_size">
+                        <span class="price_old">40.000VND</span>
+                        <span class="price">32.000VND</span>
+                        <div class="size">
+                            <input type="radio" name="gender" value="M"> M
+                            <input type="radio" name="gender" value="M"> L
+                        </div>
+                    </div>
+                    </div>
+                    <div class="card_bottom">
+                        <button class="buy">Buy now</button>
+                        <button class="add_to_cart" >Add to card</button>
+                    </div>
+                </div>
+                </div>
+                <div class="card">
+                    <div class="card-top">
+                    <img src="/Img/tradau.jpg" alt="" class="card_img">
+                    <span class="sale">-20%</span>
+                </div>
+                <div class="card_body">
+                    <div class="card_content">
+                        <h3 class="name">Trà dâu</h3>
+                        <div class="price_size">
+                        <span class="price_old">50.000VND</span>
+                        <span class="price">40.000VND</span>
+                        <div class="size">
+                            <input type="radio" name="gender" value="M"> M
+                            <input type="radio" name="gender" value="M"> L
+                        </div>
+                    </div>
+                    </div>
+                    <div class="card_bottom">
+                        <button class="buy">Buy now</button>
+                        <button class="add_to_cart" >Add to card</button>
+                    </div>
+                </div>
+                </div>
+                <div class="card">
+                    <div class="card-top">
+                    <img src="/Img/tradua.jpg" alt="" class="card_img">
+                    <span class="sale">-20%</span>
+                </div>
+                <div class="card_body">
+                    <div class="card_content">
+                        <h3 class="name">Trà dứa</h3>
+                        <div class="price_size">
+                        <span class="price_old">40000VND</span>
+                        <span class="price">32.000VND</span>
+                        <div class="size">
+                            <input type="radio" name="gender" value="M"> M
+                            <input type="radio" name="gender" value="M"> L
+                        </div>
+                    </div>
+                    </div>
+                    <div class="card_bottom">
+                        <button class="buy">Buy now</button>
+                        <button class="add_to_cart" >Add to card</button>
+                    </div>
+                </div>
+                </div>
+                <div class="card">
+                    <div class="card-top">
+                    <img src="/Img/traxoai.jpg" alt="" class="card_img">
+                    <span class="sale">-20%</span>
+                </div>
+                <div class="card_body">
+                    <div class="card_content">
+                        <h3 class="name">Trà xoai chanh dây kem cheese</h3>
+                        <div class="price_size">
+                        <span class="price_old">50.000VND</span>
+                        <span class="price">40.000VND</span>
+                        <div class="size">
+                            <input type="radio" name="gender" value="M"> M
+                            <input type="radio" name="gender" value="M"> L
+                        </div>
+                    </div>
+                    </div>
+                    <div class="card_bottom">
+                        <button class="buy">Buy now</button>
+                        <button class="add_to_cart" >Add to card</button>
+                    </div>
+                </div>
+                </div>
+                <div class="card">
+                    <div class="card-top">
+                    <img src="/Img/travai.jpg" alt="" class="card_img">
+                    <span class="sale">-20%</span>
+                </div>
+                <div class="card_body">
+                    <div class="card_content">
+                        <h3 class="name">Trà vãi</h3>
+                        <div class="price_size">
+                        <span class="price_old">40.000VND</span>
+                        <span class="price">32.000VND</span>
+                        <div class="size">
+                            <input type="radio" name="gender" value="M"> M
+                            <input type="radio" name="gender" value="M"> L
+                        </div>
+                    </div>
+                    </div>
+                    <div class="card_bottom">
+                        <button class="buy">Buy now</button>
+                        <button class="add_to_cart" >Add to card</button>
+                    </div>
+                </div>
+                </div>
+                <div class="card">
+                    <div class="card-top">
+                    <img src="/Img/tramamxoi.jpg" alt="" class="card_img">
+                    <span class="sale">-20%</span>
+                 </div>
+                 <div class="card_body">
+                    <div class="card_content">
+                        <h3 class="name">Trà mâm xôi</h3>
+                        <div class="price_size">
+                        <span class="price_old">50.000VND</span>
+                        <span class="price">32.000VND</span>
+                        <div class="size">
+                            <input type="radio" name="gender" value="M"> M
+                            <input type="radio" name="gender" value="M"> L
+                        </div>
+                    </div>
+                    </div>
+                    <div class="card_bottom">
+                        <button class="buy">Buy now</button>
+                        <button class="add_to_cart" >Add to card</button>
+                    </div>
+                </div>
+                </div>
+                <div class="card">
+                    <div class="card-top">
+                    <img src="/Img/tranho.jpg" alt="" class="card_img">
+                    <span class="sale">-20%</span>
+                </div>
+                <div class="card_body">
+                    <div class="card_content">
+                        <h3 class="name">Trà nho</h3>
+                        <div class="price_size">
+                        <span class="price_old">50.000VND</span>
+                        <span class="price">40.000VND</span>
+                        <div class="size">
+                            <input type="radio" name="gender" value="M"> M
+                            <input type="radio" name="gender" value="M"> L
+                        </div>
+                    </div>
+                    </div>
+                    <div class="card_bottom">
+                        <button class="buy">Buy now</button>
+                        <button class="add_to_cart" >Add to card</button>
+                    </div>
+                </div>
+                </div>  
+        </div>
+    </div>  
+    <!-- Soda -->
+    <div class="Soda">
+        <h3>Soda</h3>
+        <div class="cards_soda">
+            <div class="card">
+                <div class="card-top">
+                <img src="/Img/soda-chanh-bac-ha (1).jpg" alt="" class="card_img">
+                <span class="sale">-25%</span>
+            </div>
+                <div class="card_body">
+                    <div class="card_content">
+                        <h3 class="name">Soda chanh bạc hà</h3>
+                        <div class="price_size">
+                        <span class="price_old">45.000VND</span>
+                        <span class="price">30.000VND</span>
+                        <div class="size">
+                            <input type="radio" name="gender" value="M"> M
+                            <input type="radio" name="gender" value="M"> L
+                        </div>
+                    </div>
+                </div>
+                <div class="card_bottom">
+                       <button class="buy">Buy now</button>
+                        <button class="add_to_cart" >Add to card</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-top">
+                <img src="/Img/sodablue.jpg" alt="" class="card_img">
+                <span class="sale">-25%</span>
+            </div>
+            <div class="card_body">
+                <div class="card_content">
+                    <h3 class="name">Soda blue Ocean</h3>
+                    <div class="price_size">
+                    <span class="price_old">45.000VND</span>
+                    <span class="price">30.000VND</span>
+                    <div class="size">
+                        <input type="radio" name="gender" value="M"> M
+                        <input type="radio" name="gender" value="M"> L
+                    </div>
+                </div>
+                </div>
+                <div class="card_bottom">
+                    <button class="buy">Buy now</button>
+                    <button class="add_to_cart" >Add to card</button>
+                </div>
+            </div>
+            </div>
+            <div class="card">
+                <div class="card-top">
+                <img src="/Img/sodachanhday.jpg" alt="" class="card_img">
+                <span class="sale">-25%</span>
+            </div>
+            <div class="card_body">
+                <div class="card_content">
+                    <h3 class="name">Soda chanh dây</h3>
+                    <div class="price_size">
+                    <span class="price_old">45.000VND</span>
+                    <span class="price">30.000VND</span>
+                    <div class="size">
+                        <input type="radio" name="gender" value="M"> M
+                        <input type="radio" name="gender" value="M"> L
+                    </div>
+                </div>
+                </div>
+                <div class="card_bottom">
+                    <button class="buy">Buy now</button>
+                    <button class="add_to_cart" >Add to card</button>
+                </div>
+            </div>
+            </div>
+            <div class="card">
+                <div class="card-top">
+                <img src="/Img/sodadau.jpg" alt="" class="card_img">
+                <span class="sale">-25%</span>
+            </div>
+            <div class="card_body">
+                <div class="card_content">
+                    <h3 class="name">Soda dâu</h3>
+                    <div class="price_size">
+                    <span class="price_old">45.000VND</span>
+                    <span class="price">30.000VND</span>
+                    <div class="size">
+                        <input type="radio" name="gender" value="M"> M
+                        <input type="radio" name="gender" value="M"> L
+                    </div>
+                </div>
+                </div>
+                <div class="card_bottom">
+                    <button class="buy">Buy now</button>
+                    <button class="add_to_cart" >Add to card</button>
+                </div>
+            </div>
+            </div>
+            <div class="card">
+                <div class="card-top">
+                <img src="/Img/sodadua.jpg" alt="" class="card_img">
+                <span class="sale">-25%</span>
+            </div>
+            <div class="card_body">
+                <div class="card_content">
+                    <h3 class="name">Soda dứa</h3>
+                    <div class="price_size">
+                    <span class="price_old">45.000VND</span>
+                    <span class="price">30.000VND</span>
+                    <div class="size">
+                        <input type="radio" name="gender" value="M"> M
+                        <input type="radio" name="gender" value="M"> L
+                    </div>
+                </div>
+                </div>
+                <div class="card_bottom">
+                    <button class="buy">Buy now</button>
+                    <button class="add_to_cart" >Add to card</button>
+                </div>
+            </div>
+            </div>
+            <div class="card">
+                <div class="card-top">
+                <img src="/Img/sodakiwi.jpg" alt="" class="card_img">
+                <span class="sale">-10%</span>
+            </div>
+            <div class="card_body">
+                <div class="card_content">
+                    <h3 class="name">Soda kiwi</h3>
+                    <div class="price_size">
+                    <span class="price_old">45.000VND</span>
+                    <span class="price">40.000VND</span>
+                    <div class="size">
+                        <input type="radio" name="gender" value="M"> M
+                        <input type="radio" name="gender" value="M"> L
+                    </div>
+                </div>
+                </div>
+                <div class="card_bottom">
+                    <button class="buy">Buy now</button>
+                    <button class="add_to_cart" >Add to card</button>
+                </div>
+            </div>
+            </div>
+            <div class="card">
+                <div class="card-top">
+                <img src="/Img/sodanho.jpg" alt="" class="card_img">
+                <span class="sale">-25%</span>
+             </div>
+             <div class="card_body">
+                <div class="card_content">
+                    <h3 class="name">Soda nho</h3>
+                    <div class="price_size">
+                    <span class="price_old">45.000VND</span>
+                    <span class="price">30.000VND</span>
+                    <div class="size">
+                        <input type="radio" name="gender" value="M"> M
+                        <input type="radio" name="gender" value="M"> L
+                    </div>
+                </div>
+                </div>
+                <div class="card_bottom">
+                    <button class="buy">Buy now</button>
+                    <button class="add_to_cart" >Add to card</button>
+                </div>
+            </div>
+            </div>
+            <div class="card">
+                <div class="card-top">
+                <img src="/Img/sodavietquoc.jpg" alt="" class="card_img">
+                <span class="sale">-15%</span>
+            </div>
+            <div class="card_body">
+                <div class="card_content">
+                    <h3 class="name">Soda việt quốc</h3>
+                    <div class="price_size">
+                    <span class="price_old">45.000VND</span>
+                    <span class="price">35.000VND</span>
+                    <div class="size">
+                        <input type="radio" name="gender" value="M"> M
+                        <input type="radio" name="gender" value="M"> L
+                    </div>
+                </div>
+                </div>
+                <div class="card_bottom">
+                    <button class="buy">Buy now</button>
+                    <button class="add_to_cart" >Add to card</button>
+                </div>
+            </div>
+            </div>  
+    </div>
+</div>  
+    </div>  
+    <hr> 
+    <div class="footer">
+        <div class="Infor_Store">
+                <img src="/Img/500K.png" alt="">
+            <div class="Infor">
+                <div class="address">
+                    <ion-icon name="home-outline"></ion-icon> :
+                    <span> 1100 Quang Trung,P.8,Q.Gò Vấp,TP.HCM </span>
+                </div>
+                <div class="phone">
+                    <ion-icon name="call-outline"></ion-icon> :
+                    <span>0939023387</span>
+                </div>
+                <div class="mail">
+                    <ion-icon name="mail-outline"></ion-icon> :
+                    <span>DevCoffee@gmail.com</span>
+                </div>
+
+            </div>
+        </div>
+        <div class="follow_us">
+            <p>Follow Us</p>
+            <div class="social">
+           <div class="tiktok">
+            <ion-icon name="logo-tiktok"></ion-icon>
+            <span>Tik tok</span>
+           </div>
+           <div class="fb">
+            <ion-icon name="logo-facebook"></ion-icon>
+            <span>Facebook</span>
+           </div>
+           <div class="Instagam">
+            <ion-icon name="logo-instagram"></ion-icon>
+            <span>Instagram</span>
+           </div>
+        </div>
+        </div>
+        <div class="Question">
+            <p>Question</p>
+            <textarea name="" id="" cols="40" rows="5"></textarea>
+            <button>Send question</button>
+        </div>
+    </div>      
+</div>
+    <script src="Javascript.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

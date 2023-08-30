@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My cart</title>
+    <link rel="stylesheet" href="cart.css">
+</head>
+<body>
+    <div class="page-cart">
+        <div class="list_produce">
+          <h2>Danh Sách Các Sản Phẩm</h2>
+          <div class="search">
+            <label for="search_product">Tìm kiếm sản phẩm:</label>
+            <select  id="search_product">
+              <option value="Chọn loại nước"></option>
+              <option value="Trà sữa">Trà sữa</option>
+              <option value="Soda">Soda</option>
+              <option value="Sinh tố">Sinh tố</option>
+              <option value="Trà">Trà</option>
+            </select>
+            <button onclick="timKiemSanPham()">Tìm kiếm</button>
+          </div>
+            <table id="product_table">
+                <thead>
+                  <tr>
+                    <th>Checked</th>
+                    <th>Sản phẩm</th>
+                    <th>Tên </th>
+                    <th>Size</th>
+                    <th>Giá</th>
+                    <th>Số lượng</th>
+                    <th>Thành tiền</th>
+                  </tr>
+                </thead>
+                <tbody>
+                   <tr>
+                    <td><input type="checkbox" checked class="chon" onchange="updateRow(this)"></td>
+                    <td><img src="/Img/trausuakemchungnuong.jpg" alt="" style="width: 50px; height: auto;"></td>
+                    <td>Trà sữa kem trứng nướng</td>
+                    <td>M</td>
+                    <td class="price">50000</td>
+                    <td> <input type="number" class="soluong" disabled value="0" ></td>
+                    <td class="thanhtien"></td>
+                   </tr> 
+                   <tr>
+                    <td><input type="checkbox" checked class="chon" onchange="updateRow(this)"></td>
+                    <td><img src="/Img/trasuatruyenthong.jpg" alt="" style="width: 50px; height: auto;"></td>
+                    <td>Trà sữa truyền thống</td>
+                    <td>M</td>
+                    <td class="price">40000</td>
+                    <td> <input type="number" class="soluong" disabled value="0" ></td>
+                    <td class="thanhtien" ></td>
+                   </tr> 
+                   <tr>
+                    <td><input type="checkbox" checked class="chon" onchange="updateRow(this)"></td>
+                    <td><img src="/Img/sinhtobo.jpg" alt="" style="width: 50px; height: auto;"></td>
+                    <td>Sinh tố bơ</td>
+                    <td>M</td>
+                    <td class="price">40000</td>
+                    <td> <input type="number" class="soluong" disabled value="0" ></td>
+                    <td class="thanhtien"></td>
+                   </tr> 
+                   <tr>
+                    <td><input type="checkbox" checked class="chon" onchange="updateRow(this)"></td>
+                    <td><img src="/Img/sodavietquoc.jpg" alt="" style="width: 50px; height: auto;"></td>
+                    <td>Soda việt quốc</td>
+                    <td>M</td>
+                    <td class="price">35000</td>
+                    <td> <input type="number" class="soluong" disabled value="0" ></td>
+                    <td class="thanhtien"></td>
+                   </tr> 
+                   <tr>
+                    <td><input type="checkbox" checked class="chon" onchange="updateRow(this)"></td>
+                    <td><img src="/Img/travai.jpg" alt="" style="width: 50px; height: auto;"></td>
+                    <td>Trà vải</td>
+                    <td>M</td>
+                    <td class="price">35000</td>
+                    <td> <input type="number" class="soluong" disabled value="0" ></td>
+                    <td class="thanhtien"></td>
+                   </tr> 
+                   <tr>
+                    <td><input type="checkbox" checked class="chon" onchange="updateRow(this)"></td>
+                    <td><img src="/Img/sinhtodau.jpg" alt="" style="width: 50px; height: auto;"></td>
+                    <td>Sinh tố dâu</td>
+                    <td>M</td>
+                    <td class="price">40000</td>
+                    <td> <input type="number" class="soluong" disabled value="0" ></td>
+                    <td class="thanhtien"></td>
+                   </tr> 
+                   <tr>
+                    <td><input type="checkbox" checked class="chon" onchange="updateRow(this)"></td>
+                    <td><img src="/Img/trasuaxoai.jpg" alt="" style="width: 50px; height: auto;"></td>
+                    <td>Trà sữa xoài</td>
+                    <td>M</td>
+                    <td class="price">45000</td>
+                    <td> <input type="number" class="soluong" disabled value="0" ></td>
+                    <td class="thanhtien"></td>
+                   </tr> 
+                   <tr>
+                    <td><input type="checkbox" checked class="chon" onchange="updateRow(this)"></td>
+                    <td><img src="/Img/trasuamachat.jpg" alt="" style="width: 50px; height: auto;"></td>
+                    <td>Trà sữa matchat</td>
+                    <td>M</td>
+                    <td class="price">45000</td>
+                    <td> <input type="number" class="soluong" disabled value="0" ></td>
+                    <td class="thanhtien"></td>
+                   </tr> 
+                   <tr>
+                    <td><input type="checkbox" checked class="chon" onchange="updateRow(this)"></td>
+                    <td><img src="/Img/sinhtosocolabanana.jpg" alt="" style="width: 50px; height: auto;"></td>
+                    <td>Sinh tố chuối socola</td>
+                    <td>M</td>
+                    <td class="price">35000</td>
+                    <td> <input type="number" class="soluong" disabled value="0" ></td>
+                    <td class="thanhtien"></td>
+                   </tr> 
+                   <tr>
+                    <td><input type="checkbox" checked class="chon" onchange="updateRow(this)"></td>
+                    <td><img src="/Img/sinhtovietquoc.jpg" alt="" style="width: 50px; height: auto;"></td>
+                    <td>Sinh tố việt quốc</td>
+                    <td>M</td>
+                    <td class="price">35000</td>
+                    <td> <input type="number" class="soluong" disabled value="0" ></td>
+                    <td class="thanhtien"></td>
+                   </tr> 
+                   <tr>
+                    <td><input type="checkbox" checked class="chon" onchange="updateRow(this)"></td>
+                    <td><img src="/Img/sinhtothom.jpg" alt="" style="width: 50px; height: auto;"></td>
+                    <td>Sinh tố thơm</td>
+                    <td>M</td>
+                    <td class="price">35000</td>
+                    <td> <input type="number" class="soluong" disabled value="0" ></td>
+                    <td class="thanhtien"></td>
+                   </tr> 
+                </tbody>
+                <tfoot>
+                  <tr>
+                    <td colspan="6" style="font-weight: bolder; font-size: 25px;">Tổng tiền:</td>
+                    <td id="sum_price" style="color: red; font-weight: bold; font-size: 25px;"></td>
+                  </tr>
+                </tfoot>
+              </table>
+              
+        </div>
+        <div class="Infor-customer">
+        <h1>Thông tin đặt hàng</h1>
+        <form action="">
+            <input type="text" placeholder="Tên khách hàng">
+            <input type="text" placeholder="Địa chỉ">
+            <input type="text" placeholder="Số điện thoại">
+        </form>
+        <div class="order">
+            <button>Đặt hàng</button>
+        </div>
+        </div>
+    </div>
+</body>
+    <script src="Javascript.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</html>

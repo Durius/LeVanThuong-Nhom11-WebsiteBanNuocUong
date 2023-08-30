@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Login.css">
+    <title>Đăng Nhập</title>
+</head>
+<body>
+    <div class="Form_Login">
+        <form action="">
+            <span class="title">Đăng Nhập</span>
+            <div class="Input-Infor user">
+                <ion-icon name="person-circle-outline"></ion-icon>
+                <input type="text" placeholder="Username/Email" >
+            </div>
+            <div class="Input-Infor password">
+                <ion-icon name="lock-closed" class="Lock"></ion-icon>
+                <input id="pass" type="password" placeholder="Password" >
+                <ion-icon onclick="showHide()" name="eye-off" id="eye" ></ion-icon>
+            </div>
+        </form>
+            <div class="forgot_pass">
+                <div>
+                <input type="checkbox"><span class="Remerber">Remember me</span>
+                </div>
+                <a href="#" class="forgot">Forgot password?</a>
+            </div>
+          <!-- Liên kết tới trang chủ sau khi login -->
+            <div class="Login">
+                <a href="#" id="Dangnhap">Login</a>
+            </div>
+        <div class="Signup">
+            <span>Don't have an account?</span>
+            <a href="Signin.php">SignUp</a>
+        </div>
+    </div>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="Javascript.js"></script>
+</body>
+</html>

@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital@1&family=Roboto+Condensed:ital@1&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-position: center;
+     background-image: url(/Img/background\(2\).jpg);
+    background-repeat: no-repeat;
+
+}
+.Form_Login{
+    width:400px;
+    height: auto;
+    background-color: #526d82db;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 0 7px 4px #e9f4fb;
+    position: relative;
+    left: 400px;
+}
+form{
+    width: 100%;
+    height: 100%;
+}
+.title{
+    display: block;
+    text-align: center;
+    font-size: 30px;
+    color: #1D2120;
+    font-weight: bolder;
+}
+.Input-Infor{
+    position: relative;
+    width: 100%;
+    height: 35px;
+    margin-top: 20px;
+}
+.Input-Infor input{
+    width: 100%;
+    height: 100%;
+    outline: none;
+    border: none;
+    background-color:#b5cbd9;
+    border-radius: 5px;
+    padding-left: 30px;
+    font-size: 15px;
+    color: #526D82;
+}
+.Input-Infor input::placeholder{
+    font-size: 14px;
+    color: #526D82;
+}
+.user ion-icon{
+    position: absolute;
+    left: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 18px;
+    color: #27374D;
+}
+.password .Lock{
+    position: absolute;
+    left: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 18px;
+    color: #27374D;
+}
+.password #eye{
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 18px;
+    color: #27374D;
+}
+.forgot_pass{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0 20px 0;
+    font-size: 12px;
+}
+.forgot_pass div{
+    position: relative;
+    width: 100px;
+}
+.forgot_pass .Remerber{
+    position: absolute;
+    top: -1px;
+    left: 15px;
+}
+.forgot_pass .forgot
+{
+    text-decoration: unset;
+    font-weight: bolder;
+    color: #1D2120;
+}
+.forgot_pass .forgot:hover{
+text-decoration: underline;
+color: rgb(228, 41, 78);
+}
+
+.Login{
+    background: #b5cbd9;
+    font-size: 22px;
+    border-radius: 5px;
+    text-align: center;
+    position: relative;
+    padding: 5px 10px;
+    margin-top: 50px;
+}
+.Login a{
+    text-decoration: unset;
+    color:#27374D;
+    font-weight: bolder;
+}
+.Login:hover{
+    transform: scale(0.97);
+}
+.Login:hover>a{
+    color: rgb(228, 41, 78);
+}
+
+.Signup{
+    margin-top: 30px;
+    font-size: 13px;
+    display: flex;
+    justify-content: center;
+}
+.Signup a{
+    text-decoration: unset;
+    font-weight: 600;
+    color: #1D2120;
+}
+.Signup a:hover{
+    text-decoration: underline;
+    color: rgb(228, 41, 78);
+}

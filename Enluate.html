@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stype.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Contact Us</title>
+    <style>
+       
+        .comment-box {
+            width: 50%;
+            border: 1px solid #ccc;
+            margin: 50px 0;
+            padding: 10px 20px;
+            font-family: 'poppins', sans-serif;
+            border: 5px;
+            margin-left: 25%;
+            margin-top: 80px;
+            box-shadow: 0px 0px 10px 1px rgb(165, 165, 165);
+            margin-bottom: 130px;
+            position: relative;
+            left: -150px;
+        }
+
+
+        .comment-box p {
+            text-align: left;
+            font-size: 28px;
+            color: #27374D;
+        }
+
+        .comment-form input,
+        .comment-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px -10px;
+            outline: 18px;
+            font-family: 'poppins', sans-serif;
+            border: 1px solid #ddd;
+            color: #777;
+        }
+
+        .comment-form button {
+            margin: 10px 0;
+            border: none;
+            background-color: #d0d0d0;
+            padding: 10px;
+            font-size: 18px;
+            border-radius: 3px;
+            color: #444;
+        }
+
+        button:hover {
+            color: white;
+            background-color: #444;
+        }
+
+        .rate {
+            float: left;
+            height: 46px;
+            padding: 0 10px;
+            margin-left: -10px;
+            position: relative;
+            top: 20px;
+        }
+
+        .rate:not(:checked)>input {
+            position: absolute;
+            top: -9999px;
+        }
+
+        .rate:not(:checked)>label {
+            float: right;
+            width: 1em;
+            overflow: hidden;
+            white-space: nowrap;
+            cursor: pointer;
+            font-size: 30px;
+            color: #ccc;
+        }
+
+        .rate:not(:checked)>label:before {
+            content: '★ ';
+        }
+
+        .rate>input:checked~label {
+            color: #ffc700;
+        }
+
+        .rate:not(:checked)>label:hover,
+        .rate:not(:checked)>label:hover~label {
+            color: #deb217;
+        }
+
+        .rate>input:checked+label:hover,
+        .rate>input:checked+label:hover~label,
+        .rate>input:checked~label:hover,
+        .rate>input:checked~label:hover~label,
+        .rate>label:hover~input:checked~label {
+            color: #c59b08;
+        }
+    </style>
+</head>
+<body>
+    <div class="Menu">
+        <div class="logo-website">
+         <a href="Index.html"><img title="Home" src="/Img/500K.png" alt="Logo Website"></a>   
+        </div>
+        <div class="task_menu">
+            <ul class="Main_menu">
+                <li><a href="Index.html">Home</a></li>
+                <li><a href="">Product</a>
+                    <ul class="Sub_menu">
+                            <li><a href="">Milk Tea</a></li>
+                            <li><a href="">Smoothies</a></li>
+                            <li><a href="">Tea</a></li>
+                            <li><a href="">Soda</a></li>
+                    </ul>
+                </li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="Contact.html">Evaluate</a></li>
+            </ul>
+        </div>
+        <div class="buttoms">
+            <div class="search">
+                <ion-icon name="search-outline"></ion-icon>
+                <input type="text" placeholder="Sreach">
+            </div>
+            <div class="cart">
+                <ion-icon title="My Cart" name="cart-outline"></ion-icon>
+            </div>
+            <ul class="account">
+                <li><ion-icon title="My Account" name="person-outline"></ion-icon>
+                <ul class="login">
+                    <li><a href="Login.html">Login</a></li>
+                    <li><a href="Signin.html">Sign in</a></li>
+                </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="comment-box">
+        <p>Để Lại Bình Luận</p>
+        <form action="" class="comment-form">
+            <input type="text" placeholder="Tên">
+            <input type="email" placeholder="SĐT">
+            <textarea row="10" placeholder="Write Your Comment"></textarea>
+            <p>Đánh giá sản phẩm</p>
+            <div class="rate">
+                <input type="radio" id="star5" name="rate" value="5" />
+                <label for="star5" title="text">5 stars</label>
+                <input type="radio" id="star4" name="rate" value="4" />
+                <label for="star4" title="text">4 stars</label>
+                <input type="radio" id="star3" name="rate" value="3" />
+                <label for="star3" title="text">3 stars</label>
+                <input type="radio" id="star2" name="rate" value="2" />
+                <label for="star2" title="text">2 stars</label>
+                <input type="radio" id="star1" name="rate" value="1" />
+                <label for="star1" title="text">1 star</label>
+            </div>
+            <br>
+            <p>
+                <button type="submit">Gửi Bình Luận</button>
+            </p>
+        </form>
+    </div>
+    <div class="footer">
+        <div class="Infor_Store">
+                <img src="/Img/500K.png" alt="">
+            <div class="Infor">
+                <div class="address">
+                    <ion-icon name="home-outline"></ion-icon> :
+                    <span> 1100 Quang Trung,P.8,Q.Gò Vấp,TP.HCM </span>
+                </div>
+                <div class="phone">
+                    <ion-icon name="call-outline"></ion-icon> :
+                    <span>0939023387</span>
+                </div>
+                <div class="mail">
+                    <ion-icon name="mail-outline"></ion-icon> :
+                    <span>DevCoffee@gmail.com</span>
+                </div>
+
+            </div>
+        </div>
+        <div class="follow_us">
+            <p>Follow Us</p>
+            <div class="social">
+           <div class="tiktok">
+            <ion-icon name="logo-tiktok"></ion-icon>
+            <span>Tik tok</span>
+           </div>
+           <div class="fb">
+            <ion-icon name="logo-facebook"></ion-icon>
+            <span>Facebook</span>
+           </div>
+           <div class="Instagam">
+            <ion-icon name="logo-instagram"></ion-icon>
+            <span>Instagram</span>
+           </div>
+        </div>
+        </div>
+        <div class="Question">
+            <p>Question</p>
+            <textarea name="" id="" cols="40" rows="5"></textarea>
+            <button>Send question</button>
+        </div>
+    </div>      
+</body>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</html>

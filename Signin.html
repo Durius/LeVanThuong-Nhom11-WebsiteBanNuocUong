@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng Ký</title>
+    <link rel="stylesheet" href="Signin.css">
+</head>
+<body>
+   <div class="From-SignUp">
+    <form action="connect.php" method="post">
+        <span class="title">Đăng Ký</span>
+        <div class="Input-Infor Username">
+            <label>Tên đăng nhập</label>
+            <ion-icon name="person-circle-outline"></ion-icon>
+            <input type="text" id="user" name ="user" >
+        </div>
+        <div class="Input-Infor mail">
+            <ion-icon name="mail"></ion-icon>
+            <label >Email</label>
+            <input type="email" id="mail" name="email">
+        </div>
+        <div class="Input-Infor password">
+            <label>Mật khẩu</label>
+            <ion-icon name="lock-closed" class="Lock"></ion-icon>
+            <input id="pass" type="password" name="password" >
+            <ion-icon onclick="showHide()" name="eye-off" id="eye"></ion-icon>
+        </div>
+        <div class="Input-Infor Gioitinh">
+             <label for="">Giới tình</label>
+             <div id="gt_border">
+            <input type="radio" name="gt" class="gt" value="Nam"> Nam
+            <input type="radio" name="gt" class="gt" value="Nữ">Nữ
+        </div>
+    </div>
+        <div class="Input-Infor Hobby">
+            <label>Sở thích</label>
+            <div id="hoppy_border">
+            <input type="checkbox" value="Đọc sách" class="hoppy" name="hoppy[]">Đọc sách</input>
+            <input type="checkbox" value="Du lịch" class="hoppy" name="hoppy[]">Du lịch</input>
+            <input type="checkbox" value="Ăn uống" class="hoppy" name="hoppy[]">Ăn uống</input>
+            <input type="checkbox" value="Ca hát" class="hoppy" name="hoppy[]">Ca hát</input>
+            <input type="checkbox" value="Khác" class="hoppy" name="hoppy[]">Khác</input>
+        </div>
+        </div>
+        <div class="Input-Infor Country">
+            <label>Quốc tịch</label>
+            <select id="Quoctich" name="quoctich">
+                <option value="0">Chọn quốc tịch</option>
+                <option value="Việt Nam">Việt Nam</option>
+                <option value="Trung Quốc">Trung Quốc</option>
+                <option value="Nhật Bản">Nhật Bản</option>
+                <option value="Mỹ">Mỹ</option>
+                <option value="Anh">Anh</option>
+            </select>
+            </div>
+            <div class="Input-Infor note">
+                <label>Ghi chú</label>
+                <textarea id="note" cols="30" rows="5" name="note"> </textarea>
+            </div>
+            <div class="Signin" id="sigin-in-button" onclick="baoLoi()">
+                <input type="submit" value="Đăng Kí">
+            </div>
+    </form>
+ 
+   </div> 
+   <script src="Javascript.js"></script>
+   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+   <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
